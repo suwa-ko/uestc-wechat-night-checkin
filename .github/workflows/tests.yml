@@ -1,0 +1,30 @@
+name: Offline tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -r requirements.txt
+      - run: python -B -m unittest test_checkin test_cleanup test_persistence test_clear_chat_records test_maintenance test_health test_ui
+        working-directory: checkin
+      - run: node checkin/test_policy.cjs
+  windows-sync:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B -m unittest test_sync_backups
+        working-directory: checkin

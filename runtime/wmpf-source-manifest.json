@@ -1,0 +1,626 @@
+[
+  {
+    "path": "FAQ.zh.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3f76d145d4683c22356a9d69fd4a4e25194374be",
+    "size": 4672,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/3f76d145d4683c22356a9d69fd4a4e25194374be"
+  },
+  {
+    "path": "LICENSE",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9efa6fbc962836e243e20f7f23db062e2c077d28",
+    "size": 17984,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/9efa6fbc962836e243e20f7f23db062e2c077d28"
+  },
+  {
+    "path": "README.zh.md",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "36b42d533a4a613f5e6c8f9a64dfdb5b751b6f61",
+    "size": 6860,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/36b42d533a4a613f5e6c8f9a64dfdb5b751b6f61"
+  },
+  {
+    "path": "frida/autodetect/win32.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cadc9a709440d84fc78c5d74421f19f41f8a648a",
+    "size": 32666,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/cadc9a709440d84fc78c5d74421f19f41f8a648a"
+  },
+  {
+    "path": "frida/config/darwin/addresses.269136.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a9e0c4a0f3e34ed28156d96fdfe03efbf0249cf3",
+    "size": 156,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/a9e0c4a0f3e34ed28156d96fdfe03efbf0249cf3"
+  },
+  {
+    "path": "frida/config/linux/addresses.14910.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "152e0613c8551487840d73c71b7122b69cf0617f",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/152e0613c8551487840d73c71b7122b69cf0617f"
+  },
+  {
+    "path": "frida/config/linux/addresses.14978.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "cce94bbd2602150de734650ddd1a4271f1ac71ba",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/cce94bbd2602150de734650ddd1a4271f1ac71ba"
+  },
+  {
+    "path": "frida/config/linux/addresses.25665.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c28b07a67cdb5a7377ba3432835deb36e57b68e",
+    "size": 196,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/1c28b07a67cdb5a7377ba3432835deb36e57b68e"
+  },
+  {
+    "path": "frida/config/linux/addresses.25806.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "613e8b6247e6e123fa47786261299d1426aaaf71",
+    "size": 196,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/613e8b6247e6e123fa47786261299d1426aaaf71"
+  },
+  {
+    "path": "frida/config/win32/addresses.11581.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad14d17038763c8e65bfb01056aec4b8fa0d98bc",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/ad14d17038763c8e65bfb01056aec4b8fa0d98bc"
+  },
+  {
+    "path": "frida/config/win32/addresses.11633.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "88feded583f8f0e1076e46bafa820f5a3242eadb",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/88feded583f8f0e1076e46bafa820f5a3242eadb"
+  },
+  {
+    "path": "frida/config/win32/addresses.13331.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f80e4b2d5d75254a2741b28d343048f4411598f5",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/f80e4b2d5d75254a2741b28d343048f4411598f5"
+  },
+  {
+    "path": "frida/config/win32/addresses.13341.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3bff51fcb9f2b274104ec09919ba5f808e60ef00",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/3bff51fcb9f2b274104ec09919ba5f808e60ef00"
+  },
+  {
+    "path": "frida/config/win32/addresses.13487.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5c332bd71621ede150623f01e3a995b6e2c29400",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/5c332bd71621ede150623f01e3a995b6e2c29400"
+  },
+  {
+    "path": "frida/config/win32/addresses.13639.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9ea2d0b94e3a13c39b202b4b5eb95b8075ea2fec",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/9ea2d0b94e3a13c39b202b4b5eb95b8075ea2fec"
+  },
+  {
+    "path": "frida/config/win32/addresses.13655.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7f1ced386db3c28f735bda46c71757d219789249",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/7f1ced386db3c28f735bda46c71757d219789249"
+  },
+  {
+    "path": "frida/config/win32/addresses.13871.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "622ace93cb5fb74e06b31d4c14c48dd973f7842d",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/622ace93cb5fb74e06b31d4c14c48dd973f7842d"
+  },
+  {
+    "path": "frida/config/win32/addresses.13909.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ac7db48ad2069db0b42f1b71f5542f46df79f804",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/ac7db48ad2069db0b42f1b71f5542f46df79f804"
+  },
+  {
+    "path": "frida/config/win32/addresses.14161.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "db771597275b73828974ae2179c1f9912ef29edf",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/db771597275b73828974ae2179c1f9912ef29edf"
+  },
+  {
+    "path": "frida/config/win32/addresses.14199.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f6ff1553cd4f2017457dabf7f07b4a9f78a348cb",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/f6ff1553cd4f2017457dabf7f07b4a9f78a348cb"
+  },
+  {
+    "path": "frida/config/win32/addresses.14315.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "145f0839dee9a86aad62cf83a2aafabbe1c3bf03",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/145f0839dee9a86aad62cf83a2aafabbe1c3bf03"
+  },
+  {
+    "path": "frida/config/win32/addresses.16133.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f294ed2b1eee517a98f20b5d25b100d700ce1ce2",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/f294ed2b1eee517a98f20b5d25b100d700ce1ce2"
+  },
+  {
+    "path": "frida/config/win32/addresses.16203.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d7fb5a9cacea23a7a4bbf1a8a5f672195655a674",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/d7fb5a9cacea23a7a4bbf1a8a5f672195655a674"
+  },
+  {
+    "path": "frida/config/win32/addresses.16389.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "3e5a67d3fd169c5dfa61985530b6c59ca670719a",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/3e5a67d3fd169c5dfa61985530b6c59ca670719a"
+  },
+  {
+    "path": "frida/config/win32/addresses.16467.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "85df50cc8a9f2a53d948b574af4e994203965d97",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/85df50cc8a9f2a53d948b574af4e994203965d97"
+  },
+  {
+    "path": "frida/config/win32/addresses.16771.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9964498d664dff90ecfd9fa2b752c4b9ffbf7128",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/9964498d664dff90ecfd9fa2b752c4b9ffbf7128"
+  },
+  {
+    "path": "frida/config/win32/addresses.16815.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5ac8bfe9d7b4d8d148cee7f4223dde63fca4c00d",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/5ac8bfe9d7b4d8d148cee7f4223dde63fca4c00d"
+  },
+  {
+    "path": "frida/config/win32/addresses.16965.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7772174232ad1385571196265d95287a7a4ce87d",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/7772174232ad1385571196265d95287a7a4ce87d"
+  },
+  {
+    "path": "frida/config/win32/addresses.17037.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "49a1e666ae1bac37697ce8de18209282362a3450",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/49a1e666ae1bac37697ce8de18209282362a3450"
+  },
+  {
+    "path": "frida/config/win32/addresses.17071.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7426e5db172adc7471c0ff4f74da78459fbeb00c",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/7426e5db172adc7471c0ff4f74da78459fbeb00c"
+  },
+  {
+    "path": "frida/config/win32/addresses.17127.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78377839336cebfb0f14a049fa403e912853c5e7",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/78377839336cebfb0f14a049fa403e912853c5e7"
+  },
+  {
+    "path": "frida/config/win32/addresses.18055.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ad401797ee71b04e2160796fa84c69de47e4ea6a",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/ad401797ee71b04e2160796fa84c69de47e4ea6a"
+  },
+  {
+    "path": "frida/config/win32/addresses.18151.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8c990578bdeab2156e3d98ff2caad7f9a0c7ba24",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/8c990578bdeab2156e3d98ff2caad7f9a0c7ba24"
+  },
+  {
+    "path": "frida/config/win32/addresses.18787.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "996bbcc8d8afc38ecf5d1dd1be758ed008483bf3",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/996bbcc8d8afc38ecf5d1dd1be758ed008483bf3"
+  },
+  {
+    "path": "frida/config/win32/addresses.18891.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "67596d28dd4cfb1376260796a3f0f31d00a035ed",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/67596d28dd4cfb1376260796a3f0f31d00a035ed"
+  },
+  {
+    "path": "frida/config/win32/addresses.18955.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f266ed63f740d25279aea19efa5b895ee876264f",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/f266ed63f740d25279aea19efa5b895ee876264f"
+  },
+  {
+    "path": "frida/config/win32/addresses.19027.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c6af7b7166d83008688ebde555cb67d860f9c23f",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/c6af7b7166d83008688ebde555cb67d860f9c23f"
+  },
+  {
+    "path": "frida/config/win32/addresses.19201.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "9133c7cd076e698b7013d4c13db4eff44a537289",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/9133c7cd076e698b7013d4c13db4eff44a537289"
+  },
+  {
+    "path": "frida/config/win32/addresses.19339.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "56415e34901e6b5db1abb65b615539e683eda35c",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/56415e34901e6b5db1abb65b615539e683eda35c"
+  },
+  {
+    "path": "frida/config/win32/addresses.19459.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "0635a6639caedd30381cb7e0912115814f2e1da2",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/0635a6639caedd30381cb7e0912115814f2e1da2"
+  },
+  {
+    "path": "frida/config/win32/addresses.19481.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "795077c6a0ba4380f99753fa8149def6ff95cd5a",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/795077c6a0ba4380f99753fa8149def6ff95cd5a"
+  },
+  {
+    "path": "frida/config/win32/addresses.19749.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "14b3748e7e6dbbc1aa01ae9338b804c1dbff2237",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/14b3748e7e6dbbc1aa01ae9338b804c1dbff2237"
+  },
+  {
+    "path": "frida/config/win32/addresses.19769.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "917103c2ff068f84669dbee0f92fe638fc054d0a",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/917103c2ff068f84669dbee0f92fe638fc054d0a"
+  },
+  {
+    "path": "frida/config/win32/addresses.19823.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78a907f6bab3874a8c8a5b245db7834a09b6854b",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/78a907f6bab3874a8c8a5b245db7834a09b6854b"
+  },
+  {
+    "path": "frida/config/win32/addresses.19841.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "50a3d1238973611565be90f4f99c7bd00b45f8ba",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/50a3d1238973611565be90f4f99c7bd00b45f8ba"
+  },
+  {
+    "path": "frida/config/win32/addresses.19871.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "78169622ed0698192974e470ddfaf703fd77804e",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/78169622ed0698192974e470ddfaf703fd77804e"
+  },
+  {
+    "path": "frida/config/win32/addresses.19881.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "210a931b22aaa873e4634e9c70c78faaa353201c",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/210a931b22aaa873e4634e9c70c78faaa353201c"
+  },
+  {
+    "path": "frida/config/win32/addresses.19899.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "f24731122652754c1c92fd7125164c1451d8f0de",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/f24731122652754c1c92fd7125164c1451d8f0de"
+  },
+  {
+    "path": "frida/config/win32/addresses.19921.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7b15d1e9ab96b6df1649021a681cb98cc4e6648c",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/7b15d1e9ab96b6df1649021a681cb98cc4e6648c"
+  },
+  {
+    "path": "frida/config/win32/addresses.19977.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ec35e196becc4215949f52c389c6389e40449a0d",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/ec35e196becc4215949f52c389c6389e40449a0d"
+  },
+  {
+    "path": "frida/config/win32/addresses.20001.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a66ff96058c19da246c05b9ebc19650704191fd5",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/a66ff96058c19da246c05b9ebc19650704191fd5"
+  },
+  {
+    "path": "frida/config/win32/addresses.20005.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "1c5be486c25696b74de39686bedd80f1bcb3ec09",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/1c5be486c25696b74de39686bedd80f1bcb3ec09"
+  },
+  {
+    "path": "frida/config/win32/addresses.20079.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "877b3e86f9d04fe75c5620f5f6bec9d96f3e9a29",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/877b3e86f9d04fe75c5620f5f6bec9d96f3e9a29"
+  },
+  {
+    "path": "frida/config/win32/addresses.20089.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "517d892c8ec81807d4e35aa005882792152bb498",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/517d892c8ec81807d4e35aa005882792152bb498"
+  },
+  {
+    "path": "frida/config/win32/addresses.25268.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "d5542082bd5a8ea8d0f6da4f11802fa3bf8eeb95",
+    "size": 208,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/d5542082bd5a8ea8d0f6da4f11802fa3bf8eeb95"
+  },
+  {
+    "path": "frida/config/win32/addresses.25297.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "df249409fdeb692f99f36a3665f25300133888b7",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/df249409fdeb692f99f36a3665f25300133888b7"
+  },
+  {
+    "path": "frida/config/win32/addresses.25364.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "4311fc212afe95de4c953b1811e163e55267d3e9",
+    "size": 154,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/4311fc212afe95de4c953b1811e163e55267d3e9"
+  },
+  {
+    "path": "frida/config/win32/addresses.25459.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "b2b1dcad5bf20a1a84e08f5b0200aeedcc362b3d",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/b2b1dcad5bf20a1a84e08f5b0200aeedcc362b3d"
+  },
+  {
+    "path": "frida/config/win32/addresses.25510.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8f3627a40922c806b35d3960d3db22a04068fca0",
+    "size": 155,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/8f3627a40922c806b35d3960d3db22a04068fca0"
+  },
+  {
+    "path": "frida/config/win32/addresses.25558.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "132eac914cc99e6fc61538863484c9b7d502a8b6",
+    "size": 209,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/132eac914cc99e6fc61538863484c9b7d502a8b6"
+  },
+  {
+    "path": "frida/config/win32/addresses.25710.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8873143e9b1ed617efd1b2752bac671b8de47284",
+    "size": 388,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/8873143e9b1ed617efd1b2752bac671b8de47284"
+  },
+  {
+    "path": "frida/config/win32/addresses.25715.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "a744f5545692e4efdebbade2f9b13af77a3eb19f",
+    "size": 389,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/a744f5545692e4efdebbade2f9b13af77a3eb19f"
+  },
+  {
+    "path": "frida/hook.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "729638823fe5f827206c78994d77efdac3951301",
+    "size": 7793,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/729638823fe5f827206c78994d77efdac3951301"
+  },
+  {
+    "path": "package.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "dbe3ad895558f56c8946a5a02e55944d98ac0a0f",
+    "size": 361,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/dbe3ad895558f56c8946a5a02e55944d98ac0a0f"
+  },
+  {
+    "path": "src/cli.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "58525db564c49cc0002991e0fd6d83e51a0d9f8b",
+    "size": 2125,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/58525db564c49cc0002991e0fd6d83e51a0d9f8b"
+  },
+  {
+    "path": "src/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2f103659b5474d601968b922c21d485c6190a4f1",
+    "size": 10324,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/2f103659b5474d601968b922c21d485c6190a4f1"
+  },
+  {
+    "path": "src/logger.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "ccab23cd24b7f27ad5fd3efb15bd508e4f2c76e1",
+    "size": 735,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/ccab23cd24b7f27ad5fd3efb15bd508e4f2c76e1"
+  },
+  {
+    "path": "src/platform/darwin.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "7550a27a4e5bd31d8ba925efc8f8143853b3dc64",
+    "size": 1197,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/7550a27a4e5bd31d8ba925efc8f8143853b3dc64"
+  },
+  {
+    "path": "src/platform/index.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "619a8426d00ff50c4089ebb3dae3e002349d8401",
+    "size": 606,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/619a8426d00ff50c4089ebb3dae3e002349d8401"
+  },
+  {
+    "path": "src/platform/linux.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "8fc7487fddd4d1bf247f38f3e4b5e390f0a3ff9e",
+    "size": 2373,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/8fc7487fddd4d1bf247f38f3e4b5e390f0a3ff9e"
+  },
+  {
+    "path": "src/platform/types.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "42f6444867435cc5e97aed1582d19b6b71a4ca9e",
+    "size": 156,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/42f6444867435cc5e97aed1582d19b6b71a4ca9e"
+  },
+  {
+    "path": "src/platform/win32.ts",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "c95aa3a008d8fae99e3a1ebdde640b909da62032",
+    "size": 1984,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/c95aa3a008d8fae99e3a1ebdde640b909da62032"
+  },
+  {
+    "path": "src/third-party/RemoteDebugCodex.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "476edda3ea20d7b0d2cd30710c8f622643a6f017",
+    "size": 32363,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/476edda3ea20d7b0d2cd30710c8f622643a6f017"
+  },
+  {
+    "path": "src/third-party/RemoteDebugConstants.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "2579a2cadd27cdaeeeaa1cba7f8d9d9883c773d5",
+    "size": 26551,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/2579a2cadd27cdaeeeaa1cba7f8d9d9883c773d5"
+  },
+  {
+    "path": "src/third-party/RemoteDebugUtils.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "466036904563cfedf570d835ed7de3cf10c775fc",
+    "size": 5399,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/466036904563cfedf570d835ed7de3cf10c775fc"
+  },
+  {
+    "path": "src/third-party/WARemoteDebugProtobuf.js",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "85db39e5363eaa1e65bd9a1b05e88bd84b443f51",
+    "size": 541199,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/85db39e5363eaa1e65bd9a1b05e88bd84b443f51"
+  },
+  {
+    "path": "tsconfig.json",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "91516d0b7be4a96c9f003e7357add8af59c20808",
+    "size": 271,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/91516d0b7be4a96c9f003e7357add8af59c20808"
+  },
+  {
+    "path": "yarn.lock",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "59d73895b8f67eec95aa0006a693d6ff733d6434",
+    "size": 27194,
+    "url": "https://api.github.com/repos/evi0s/WMPFDebugger/git/blobs/59d73895b8f67eec95aa0006a693d6ff733d6434"
+  }
+]

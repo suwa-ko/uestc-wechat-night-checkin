@@ -1,0 +1,37 @@
+services:
+  wechat:
+    image: wechat-web:4.1.13.26
+    container_name: wechat-web
+    init: true
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "20m"
+        max-file: "3"
+    cpus: 1.0
+    mem_limit: 1280m
+    memswap_limit: 1792m
+    pids_limit: 512
+    shm_size: 256m
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    ports:
+      - "127.0.0.1:6080:6080"
+    environment:
+      TZ: Asia/Shanghai
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,size=384m
+      - /run:rw,nosuid,nodev,size=16m
+    volumes:
+      - profile:/home/wechat
+      - /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime:ro
+      - /usr/share/zoneinfo/Asia/Shanghai:/usr/share/zoneinfo/Asia/Shanghai:ro
+    labels:
+      io.github.uestc-wechat.runtime: "v1"
+      io.github.uestc-wechat.desktop: "v1"
+volumes:
+  profile:
+    external: true
+    name: wechat-profile

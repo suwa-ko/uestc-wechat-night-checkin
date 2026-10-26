@@ -1,0 +1,18 @@
+{
+  "timezone": "Asia/Shanghai",
+  "schedule": "21:01",
+  "manage_url": "https://checkin.example.com/",
+  "email_enabled": false,
+  "location": {
+    "location_name": "自行核对的位置",
+    "coordinate_system": "WGS84",
+    "latitude": null,
+    "longitude": null,
+    "gcj02": [null, null]
+  },
+  "astrbot": {
+    "key_file": "/etc/wechat-checkin/astrbot-im.key",
+    "url": "http://127.0.0.1:6185/api/v1/im/messages",
+    "umo": "YOUR_PLATFORM_ID:FriendMessage:YOUR_QQ_ID"
+  }
+}
