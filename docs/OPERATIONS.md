@@ -14,6 +14,8 @@ sudo python3 /usr/local/lib/wechat-checkin/checkin.py dry-run
 
 每日账本是`/var/lib/wechat-checkin/YYYY-MM-DD.json`。不要删除已有`confirmIntent`的账本强制重试。遇到验证码、MFA或失效登录时，先从远程桌面由本人处理，再执行`checkin.py resume`；恢复命令不会立即提交。
 
+最终归档UI版本为`2026.10.27.1`：只允许对已记住账号的、经过严格模板及稳定性检查的“进入微信”按钮点击一次。等待后仍无主窗口则暂停；不会自动处理手机确认、扫码、MFA或锁定。认证已经暂停后，仍需本人处理并显式`resume`。
+
 ## 维护锁与补跑
 
 签到、心跳、备份和清理共享运行锁。维护任务先等待最多30秒，仍忙碌或备份前提暂不满足时退出75；systemd间隔60秒补跑，30分钟内最多启动4次（含首次）。业务失败和常见崩溃信号停止，避免无限执行。直接运行Python脚本不由systemd管理，不会自动补跑。

@@ -25,7 +25,7 @@ templates = source / 'ui-templates'
 if templates.is_dir():
     target = root / 'ui-templates'
     target.mkdir(mode=0o755, exist_ok=True)
-    for name in ['main-menu.png', 'storage-settings.png', 'clear-button.png', 'clear-confirm.png']:
+    for name in ['main-menu.png', 'storage-settings.png', 'clear-button.png', 'clear-confirm.png', 'enter-wechat.png']:
         shutil.copyfile(templates / name, target / name)
         (target / name).chmod(0o644)
 renderer = Path('/root/astrbot/data/wechat-checkin')

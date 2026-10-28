@@ -156,6 +156,13 @@ def location(config):
 
 
 def prepare(config):
+    from ui import ensure_wechat_ready
+    try:
+        entry = ensure_wechat_ready()
+    except RuntimeError as error:
+        raise Failure(str(error)) from None
+    if entry['passwordless_entry_clicked']:
+        event('wechat_passwordless_entered')
     debugger()
     try:
         node('open')

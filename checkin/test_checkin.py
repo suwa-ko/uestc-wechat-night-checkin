@@ -91,9 +91,34 @@ class NotificationTests(unittest.TestCase):
 
     def test_no_open_page_bootstraps_miniapp(self):
         snapshot = {'hasTicket': True, 'businessDate': '2026-10-24', 'locationActive': True, 'mapMatches': True}
-        with patch.object(checkin, 'debugger'), patch.object(checkin, 'location'), patch.object(checkin, 'node', side_effect=[checkin.Failure('CDP_TIMEOUT_TARGET.GETTARGETS'), {}, snapshot]), patch('ui.bootstrap') as bootstrap:
+        with patch('ui.ensure_wechat_ready', return_value={'passwordless_entry_clicked': False}) as ready, patch.object(checkin, 'debugger'), patch.object(checkin, 'location'), patch.object(checkin, 'node', side_effect=[checkin.Failure('CDP_TIMEOUT_TARGET.GETTARGETS'), {}, snapshot]), patch('ui.bootstrap') as bootstrap:
             self.assertEqual(checkin.prepare(self.config), snapshot)
+        ready.assert_called_once()
         bootstrap.assert_called_once()
+
+    def test_passwordless_entry_precedes_debugger(self):
+        calls = []
+        def entered():
+            calls.append('entry')
+            return {'passwordless_entry_clicked': True}
+        snapshot = {'hasTicket': True, 'businessDate': '2026-10-24', 'locationActive': True, 'mapMatches': True}
+        with patch('ui.ensure_wechat_ready', side_effect=entered), \
+             patch.object(checkin, 'debugger', side_effect=lambda: calls.append('debugger')), \
+             patch.object(checkin, 'location'), patch.object(checkin, 'node', side_effect=[{}, snapshot]), \
+             patch.object(checkin, 'event') as event:
+            self.assertEqual(checkin.prepare(self.config), snapshot)
+        self.assertEqual(calls, ['entry', 'debugger'])
+        event.assert_called_once_with('wechat_passwordless_entered')
+
+    def test_auth_challenge_stops_before_debugger_and_school_access(self):
+        with patch('ui.ensure_wechat_ready', side_effect=RuntimeError('AUTH_REQUIRED')), \
+             patch.object(checkin, 'debugger') as debugger, patch.object(checkin, 'node') as node, \
+             patch.object(checkin, 'location') as location:
+            with self.assertRaisesRegex(checkin.Failure, 'AUTH_REQUIRED'):
+                checkin.prepare(self.config)
+        debugger.assert_not_called()
+        node.assert_not_called()
+        location.assert_not_called()
 
     def test_auth_pause_does_not_attempt_login_again(self):
         checkin.save(self.root / 'control.json', {'auth_paused': True})

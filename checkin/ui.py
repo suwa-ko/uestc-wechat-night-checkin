@@ -9,6 +9,7 @@ import time
 from PIL import Image, ImageChops, ImageStat
 
 CONTAINER = 'wechat-web'
+UI_BUILD = '2026.10.27.1'
 
 
 def docker(*args, **kwargs):
@@ -93,8 +94,68 @@ def wait_for_school_logo(template, timeout=30):
         time.sleep(.4)
 
 
+def main_windows(rows):
+    return [w for w in rows if w['class'] == 'wechat' and w['instance'] == 'wechat'
+            and w['width'] >= 800 and w['height'] >= 600]
+
+
+def find_passwordless_entry(frame, rows, template):
+    """Match only the observed native remembered-account entry button, including its text."""
+    owned = [w for w in rows if w['class'] == 'wechat' and w['instance'] == 'wechat']
+    if len(owned) != 1 or frame.size != (1280, 900) or template.size != (174, 36):
+        return None
+    w = owned[0]
+    if (w['width'], w['height']) != (292, 396):
+        return None
+    if w['x'] < 0 or w['y'] < 0 or w['x'] + 292 > 1280 or w['y'] + 396 > 900:
+        return None
+    crop = frame.crop((w['x'] + 59, w['y'] + 289, w['x'] + 233, w['y'] + 325)).convert('RGB')
+    template = template.convert('RGB')
+    difference = ImageChops.difference(crop, template)
+    score = sum(ImageStat.Stat(difference).mean) / 3
+    # Check the text separately: matching a generic green login button is not enough.
+    text_score = sum(ImageStat.Stat(difference.crop((44, 5, 130, 31))).mean) / 3
+    if score > 2 or text_score > 2:
+        return None
+    return (w['id'], w['x'] + 146, w['y'] + 307)
+
+
+def ensure_wechat_ready(timeout=30):
+    """Click a verified remembered-account entry once; never click an authentication prompt."""
+    rows = windows()
+    main = main_windows(rows)
+    if len(main) == 1:
+        return {'passwordless_entry_clicked': False}
+    template_path = Path(__file__).with_name('ui-templates') / 'enter-wechat.png'
+    if not template_path.is_file():
+        raise RuntimeError('AUTH_REQUIRED')
+    with Image.open(template_path) as image:
+        template = image.convert('RGB')
+    match = find_passwordless_entry(screenshot(), rows, template)
+    if match is None:
+        raise RuntimeError('AUTH_REQUIRED')
+    x_events(f'x.XMapRaised(d,{match[0]})')
+    time.sleep(.4)
+    stable = find_passwordless_entry(screenshot(), windows(), template)
+    if stable != match:
+        raise RuntimeError('AUTH_REQUIRED')
+    time.sleep(.4)
+    if find_passwordless_entry(screenshot(), windows(), template) != stable:
+        raise RuntimeError('AUTH_REQUIRED')
+    click(stable[1], stable[2])
+    deadline = time.monotonic() + max(0, timeout)
+    while True:
+        main = main_windows(windows())
+        if len(main) == 1:
+            return {'passwordless_entry_clicked': True}
+        if len(main) > 1 or time.monotonic() >= deadline:
+            raise RuntimeError('AUTH_REQUIRED')
+        time.sleep(.5)
+
+
 def bootstrap():
-    main = [w for w in windows() if w['class'] == 'wechat' and w['instance'] == 'wechat' and w['width'] >= 800 and w['height'] >= 600]
+    entry = ensure_wechat_ready()
+    main = main_windows(windows())
     if len(main) != 1:
         raise RuntimeError('AUTH_REQUIRED')
     w = main[0]
@@ -113,5 +174,5 @@ def bootstrap():
     started = time.monotonic()
     score, x, y = wait_for_school_logo(template)
     click(x, y)
-    return {'bootstrap': True, 'logo_match_error': round(score, 2),
+    return {'bootstrap': True, 'ui_build': UI_BUILD, **entry, 'logo_match_error': round(score, 2),
             'logo_wait_seconds': round(time.monotonic() - started, 2)}

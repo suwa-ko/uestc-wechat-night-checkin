@@ -1,0 +1,11 @@
+{
+  "archived_on": "2026-10-28",
+  "ui_build": "2026.10.27.1",
+  "source_verified_against_running_installation": true,
+  "original_source_sha256": {
+    "checkin.py": "a4ecba4f558837e7a018ec2f37b4e6130881c4901c2eeaa64419868ed7d63e55",
+    "ui.py": "2fd5634dc27d6bffbec7023dd93ddd8346e43dc53126fffa01b5d66a12dd38a5"
+  },
+  "private_configuration_or_profile_included": false,
+  "note": "Public paths and placeholders differ from the private deployment; this is a sanitized source archive, not an account backup."
+}
